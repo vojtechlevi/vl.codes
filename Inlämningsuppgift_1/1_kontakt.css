@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Huvudrubrik */
+.page_header {
+    display: inline-block;
+    padding: 10px 0px 0px 15px;
+    margin-bottom: 5px;
+}
+
+/* Navbar */
+.nav {
+
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: width .3s ease 0s, left .3s ease 0s;
+}
+
+a:focus {
+    color: #ff576a !important;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ff576a;
+    cursor: pointer;
+
+}
+
+
+.mailform {
+    border: solid #ff576a;
+    margin: 10% 20%;
+    background-color: #fbc3bc;
+    border-radius: 10px;
+}
+
+.mailform h3 {
+    background-color: #ff576a;
+    text-align: center;
+}
+
+form {
+    margin: 10px 10px;
+
+}
+
+input {
+    padding: 10px;
+    margin: 10px 10px;
+    width: 30%;
+    border-radius: 10px;
+    border-color: #ff576a;
+}
+
+label {
+    margin: 10px 10px;
+}
+
+.msg {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    border-color: #ff576a;
+
+}
+
+button {
+    padding: 15px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 20px;
+    background-color: #ff576a;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #ff576a;
+}
