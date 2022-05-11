@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    overflow: scroll;
+}
+
+h2 {
+    position: fixed;
+    color: crimson;
+    left: 400px;
+    margin-top: 50px;
+    animation: textglow 2s ease-in-out infinite alternate;
+}
+
+hr {
+    animation: boxglow 2s ease-in-out infinite alternate;
+}
+
+
+
+/* Calculator */
+
+
+.calculator {
+    position: fixed;
+    min-width: 300px;
+    left: 105px;
+    margin-top: 150px;
+}
+
+.calc-display {
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: crimson;
+    color: white;
+    height: 70px;
+    width: 100%;
+    text-align: right;
+    padding: 20px;
+    font-size: 26px;
+    box-shadow: 0px 8px 15px rgba(220, 20, 60, 0.5);
+
+}
+
+.all_buttons {
+    margin-top: 5%;
+    color: white;
+    text-shadow: 10px 1px px red;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+
+}
+
+.button {
+    border: 3px solid crimson;
+    border-radius: 20px;
+    height: 50px;
+    width: 80%;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    text-shadow: 0px 0px 5px white;
+    box-shadow: 0px 8px 15px rgba(220, 20, 60, 0.5);
+}
+
+.button:hover {
+    background-color: rgba(220, 20, 60, 1);
+    box-shadow: 0px 8px 20px rgba(220, 20, 60, 0.8);
+    transform: translateY(-4px);
+}
+
+.button:active {
+    box-shadow: inset 5px 5px 5px black;
+    text-shadow: 5px 1px 1px white;
+    color: transparent;
+}
+
+.btn-0 {
+    grid-column: 1/3;
+
+}
+
+
+/* History */
+
+
+.history-display {
+    position: fixed;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: crimson;
+    font-size: 26px;
+    min-height: 320px;
+    max-height: 320px;
+    width: 370px;
+    left: 600px;
+    margin-top: 150px;
+    overflow: hidden;
+    overflow: scroll;
+}
+
+hr {
+    height: 4px;
+    width: 100%;
+    border-radius: 5%;
+    box-shadow: 0px 5px 5px rgba(220, 20, 60, 0.6);
+
+}
+
+.line {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.result-list {
+    list-style-type: none;
+    margin-top: 5px;
+    border-color: crimson;
+}
+
+.result-list li {
+    position: relative;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 15px;
+    background-color: crimson;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 8px 5px rgba(39, 6, 13, 0.5);
+}
+
+li .historybutton {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    transition: all 0.2s ease 0s;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.historybutton:hover {
+    box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.8);
+    transform: translateY(-4px);
+}
+
+@keyframes textglow {
+    from {
+        text-shadow: 0 0 10px crimson;
+    }
+
+    to {
+        text-shadow: 0 0 30px crimson, 0 0 15px crimson;
+    }
+}
+
+@keyframes boxglow {
+    from {
+        box-shadow: 0 0 10px crimson;
+    }
+
+    to {
+        box-shadow: 0 0 30px crimson, 0 0 10px crimson;
+    }
+}
