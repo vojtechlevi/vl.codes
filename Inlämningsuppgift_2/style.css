@@ -18,14 +18,16 @@ h2 {
 }
 
 hr {
-    animation: boxglow 2s ease-in-out infinite alternate;
+    border: 2px solid black;
+    height: 4px;
+    width: 100%;
+    border-radius: 5%;
+    box-shadow: 0px 5px 5px rgba(220, 20, 60, 0.6);
 }
 
 
 
 /* Calculator */
-
-
 .calculator {
     position: fixed;
     min-width: 300px;
@@ -91,8 +93,6 @@ hr {
 
 
 /* History */
-
-
 .history-display {
     position: fixed;
     padding: 20px;
@@ -110,6 +110,7 @@ hr {
 }
 
 hr {
+    border: 2px solid black;
     height: 4px;
     width: 100%;
     border-radius: 5%;
@@ -117,10 +118,6 @@ hr {
 
 }
 
-.line {
-    border: 2px solid black;
-    border-radius: 5px;
-}
 
 .result-list {
     list-style-type: none;
@@ -136,7 +133,7 @@ hr {
     background-color: crimson;
     border-radius: 10px;
     text-align: left;
-    box-shadow: 0px 8px 5px rgba(39, 6, 13, 0.5);
+    box-shadow: 0px 10px 5px rgba(39, 6, 13, 0.5);
 }
 
 li .historybutton {
