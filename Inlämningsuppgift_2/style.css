@@ -177,7 +177,7 @@ li .historybutton {
     }
 }
 
-@media(max-width:700px) {
+@media(max-width:1200px) {
     .container {
         flex-direction: column;
 
