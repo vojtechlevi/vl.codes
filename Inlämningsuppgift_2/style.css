@@ -10,10 +10,11 @@ body {
 }
 
 h2 {
-    position: fixed;
-    color: crimson;
-    left: 400px;
+    display: flex;
     margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    color: crimson;
     animation: textglow 2s ease-in-out infinite alternate;
 }
 
@@ -22,14 +23,22 @@ hr {
 }
 
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 /* Calculator */
 .calculator {
-    position: fixed;
-    min-width: 300px;
-    left: 105px;
-    margin-top: 150px;
+    width: 300px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+
 }
 
 .calc-display {
@@ -91,7 +100,7 @@ hr {
 
 /* History */
 .history-display {
-    position: fixed;
+
     padding: 20px;
     border-radius: 20px;
     color: white;
@@ -99,9 +108,9 @@ hr {
     font-size: 26px;
     min-height: 320px;
     max-height: 320px;
-    width: 370px;
-    left: 600px;
-    margin-top: 150px;
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 30px;
     overflow: hidden;
     overflow: scroll;
 }
@@ -166,4 +175,26 @@ li .historybutton {
     to {
         box-shadow: 0 0 30px crimson, 0 0 10px crimson;
     }
+}
+
+@media(max-width:400px) {
+    .container {
+        flex-direction: column;
+
+    }
+
+    .calculator {
+        width: 230px;
+        margin: 0;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .history-display {
+        width: 230px;
+        margin: 0;
+
+    }
+
+
 }
