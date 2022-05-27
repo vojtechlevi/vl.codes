@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Memory Game</title>
+</head>
+
+<body>
+    <header>
+        <h1>P<img src="../cursor-icons/closedPokeball.png"/>kéMem<img src="../cursor-icons/closedPokeball.png"/>ry</h1>
+    </header>
+
+    <!-- MENU -->
+    <section id="menu">
+        <div class="container">
+            <h2>Main Menu</h2>
+            <hr>
+            <button class="play-player">Multi-player</button>
+            <button class="play-computer">Single-player</button>
+        </div>
+    </section>
+
+
+    <!-- PLAYER MENU -->
+    <section id="player-menu">
+        <div class="container">
+            <h2>Multiplayer</h2>
+            <hr>
+            <div class="details">
+                <label for="spelare1input">Player 1</label>
+                <input type="text" id="spelare1input" placeholder="Name..." maxlength="8" required>
+
+                <label for="spelare2input">Player 2</label>
+                <input type="text" id="spelare2input" placeholder="Name..." maxlength="8" required>
+
+                <button class="startPlayer">Press Start 2P</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- COMPUTER MENU -->
+    <section id="computer-menu">
+        <div class="container">
+            <h2>Singleplayer</h2>
+            <hr>
+            <div class="details">
+                <label for="text">Player</label>
+                <input type="text" id="spelare3input" placeholder="Name..." maxlength="8" required>
+
+                <label>Computer level</label>
+                <button class="lvl-easy">Easy</button>
+                <button class="lvl-hard">Hard</button>
+
+                <button class="startComputer">Press Start 2P</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- GAME MENU -->
+    
+    
+    <section id="game">
+        <div class="container">
+            <div class="game-box">
+                  <p class="game-round"></p>
+            </div>
+            <aside>
+                <div class="history">
+                    <div class="left-column">
+                        <h2>Scores</h2>
+                        <p class="spelare1poäng"></p>
+                        <p class="spelare2poäng"></p>
+                        <button class="reset">Reset</button>
+                        <button class="quit">Quit</button>
+                        <audio controls>
+                            <source src="../pokemon-sounds/Encounter.mp3" type="audio/mpeg">
+                        </audio>  
+                    </div>
+                    <div class="right-column">
+                        <h3>History</h3>
+                        <hr>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
