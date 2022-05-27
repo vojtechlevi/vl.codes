@@ -330,7 +330,6 @@ h1 img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     border-top: 3px solid black;
-    perspective: 800px;
 }
 
 #game .game-box .game-round {
@@ -360,8 +359,8 @@ h1 img {
     cursor: pointer;
     border-radius: 10%;
     background-color: black;
-    transition: transform 1s linear;
-    transform-style: preserve-3d;
+    -webkit-transition: transform 1s linear;
+    -webkit-transform-style: preserve-3d;
     box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
 }
 
@@ -375,17 +374,20 @@ h1 img {
 }
 
 #game .container .card .back {
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     pointer-events: none;
+    -webkit-transform: rotateX(0deg);
 }
 
 #game .container .card .face {
-    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
     pointer-events: none;
+    z-index: -1;
+    -webkit-transform: rotateX(0deg);
 }
 
 .toggleCard {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
     pointer-events: none;
 }
 

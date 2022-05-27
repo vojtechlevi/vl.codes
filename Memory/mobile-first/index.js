@@ -188,7 +188,8 @@ const createCards = () => {
          *  <img src="bild2.jpeg" class="face"/>
          * </div>
          */
-        card.append(cardFrontImg, cardBackImg);
+        card.append(cardBackImg);
+        card.append(cardFrontImg);
         gameBox.append(card);
 
         card.addEventListener('click', (event) => {
