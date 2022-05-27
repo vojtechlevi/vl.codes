@@ -16,6 +16,8 @@ let scoreP2 = document.querySelector('.spelare2poäng');
 let reset = document.querySelector('.reset');
 let quit = document.querySelector('.quit');
 
+let history = document.querySelector('.history-content')
+
 let startMenu = document.querySelector('#menu');
 let playerMenu = document.querySelector('#player-menu');
 let computerMenu = document.querySelector('#computer-menu')
@@ -68,6 +70,12 @@ playPlayerBtn.addEventListener('click', event => {
         });
 
         reset.addEventListener('click', event => {
+            pointsP1 = 0;
+            scoreP1.textContent = input1 + ': ' + pointsP1;
+            pointsP2 = 0;
+            scoreP2.textContent = input2 + ': ' + pointsP2;
+            history.innerHTML = '';
+
             gameBox.innerHTML = '';
             createCards();
         })
@@ -91,11 +99,11 @@ playComputerBtn.addEventListener('click', event => {
     });
 
     startComputerBtn.addEventListener('click', event => {
+        event.preventDefault();
         input3 = inputP3.value;
         if (input3 === "") {
             return;
         }
-        event.preventDefault();
         computerMenu.style.display = 'none';
         game.style.display = 'flex';
 
@@ -108,11 +116,10 @@ playComputerBtn.addEventListener('click', event => {
         });
 
         reset.addEventListener('click', event => {
+            
             gameBox.innerHTML = '';
             createCards();
         })
-
-        createCards();
     });
 });
 
@@ -228,12 +235,16 @@ function takingturns() {
                 scoreP1.textContent = input1 + ': ' + pointsP1;
                 turn = false;
                 timesClicked = 0;
+                addToHistory(input1);
+                allPointsTaken(input1);
                 return;
             } else {
                 pointsP2++
                 scoreP2.textContent = input2 + ': ' + pointsP2;
                 turn = true;
                 timesClicked = 0;
+                addToHistory(input2);
+                allPointsTaken(input2);
                 return;
             }
         }
@@ -258,6 +269,27 @@ function takingturns() {
         }
 
     }
+}
+
+function addToHistory(player){
+    let historyElement = document.createElement('p');
+    historyElement.textContent = player + " found a pair!";
+    historyElement.className = "historyElement";
+    history.append(historyElement);
+}
+
+function allPointsTaken(player){
+    if(pointsP1 + pointsP2 === 18){
+            let historyElement = document.createElement('p');
+            historyElement.textContent = player + " has won!";
+            historyElement.className = "historyElement";
+            history.append(historyElement);
+    }
+
+}
+
+function FunctionHej(){
+    console.log("card");
 }
 
 
