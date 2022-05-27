@@ -324,92 +324,41 @@ h1 img {
 }
 
 #game .container .game-box {
-    position: relative;
+    
     height: 60%;
     max-height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     border-top: 3px solid black;
-}
-
-
-#game .game-box .card {
-    position: relative;
-    width: 70%;
-    height: 70%;
-    margin: auto;
-    cursor: pointer;
-    border-radius: 10%;
-    background-color: black;
-    
-    -webkit-transform-style: preserve-3d;
-    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
-}
-
-#game .container .card img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-content: center;
     align-items: center;
+    
+   
+
 }
-
-#game .container .card .back {
-    -webkit-backface-visibility: hidden;
-    pointer-events: none;
-}
-
-#game .container .card .face {
-    -webkit-transform: scaleX(-1);
-    pointer-events: none;
-}
-
-.toggleCard {
-    -webkit-transform: rotateY(180deg);
-    pointer-events: none;
-}
-
-
-
-
-
-
-
-
-
-
 
 #game .game-box .card {
-    position: relative;
-    width: 70%;
-    height: 70%;
+    width: 50%;
+    height: 70%; /* 70% */
     margin: auto;
-    cursor: pointer;
-    border-radius: 10%;
     background-color: black;
-    transition: transform 1s linear;
-    -webkit-transition: transform 1s linear;
+    border-radius: 5px;
+    transition: all 1s linear;
+    -webkit-transition: all 1s linear;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
-    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
 }
 
 #game .container .card img {
     position: absolute;
     width: 100%;
     height: 100%;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    
 }
 
 #game .container .card .back {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-
     pointer-events: none;
-
     transform: rotateX(0deg);
     -webkit-transform: rotateX(0deg);
 }
@@ -418,14 +367,12 @@ h1 img {
     -webkit-transform: scaleX(-1);
     pointer-events: none;
     z-index: -1;
-    transform: rotateX(0deg);;
-    -webkit-transform: rotateX(0deg);
 }
 
 .toggleCard {
     transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
     
+
     pointer-events: none;
 }
 
