@@ -15,21 +15,19 @@ body {
 }
 
 header {
-  background-image: linear-gradient(
-    to right,
-    #6bd178,
-    #9ebe53,
-    #c0a844,
-    #d5914b,
-    #dd7c60,
-    #e16e6e,
-    #de6281,
-    #d45c96,
-    #cd55ac,
-    #bd55c5,
-    #9d5be1,
-    #5f66fb
-  );
+  background-image: linear-gradient(to right,
+      #6bd178,
+      #9ebe53,
+      #c0a844,
+      #d5914b,
+      #dd7c60,
+      #e16e6e,
+      #de6281,
+      #d45c96,
+      #cd55ac,
+      #bd55c5,
+      #9d5be1,
+      #5f66fb);
   text-align: center;
   padding: 1em;
   border-bottom: 5px solid black;
@@ -45,21 +43,19 @@ section {
 
 footer {
   position: fixed;
-  background-image: linear-gradient(
-    to right,
-    #6bd178,
-    #9ebe53,
-    #c0a844,
-    #d5914b,
-    #dd7c60,
-    #e16e6e,
-    #de6281,
-    #d45c96,
-    #cd55ac,
-    #bd55c5,
-    #9d5be1,
-    #5f66fb
-  );
+  background-image: linear-gradient(to right,
+      #6bd178,
+      #9ebe53,
+      #c0a844,
+      #d5914b,
+      #dd7c60,
+      #e16e6e,
+      #de6281,
+      #d45c96,
+      #cd55ac,
+      #bd55c5,
+      #9d5be1,
+      #5f66fb);
   bottom: 0;
   width: 100%;
   height: 2em;
@@ -117,21 +113,19 @@ h1 img {
 #menu .container h2 {
   padding: 10px;
   font-size: 1rem;
-  background-image: linear-gradient(
-    to right,
-    #6bd178,
-    #9ebe53,
-    #c0a844,
-    #d5914b,
-    #dd7c60,
-    #e16e6e,
-    #de6281,
-    #d45c96,
-    #cd55ac,
-    #bd55c5,
-    #9d5be1,
-    #5f66fb
-  );
+  background-image: linear-gradient(to right,
+      #6bd178,
+      #9ebe53,
+      #c0a844,
+      #d5914b,
+      #dd7c60,
+      #e16e6e,
+      #de6281,
+      #d45c96,
+      #cd55ac,
+      #bd55c5,
+      #9d5be1,
+      #5f66fb);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -145,21 +139,19 @@ h1 img {
 
 #menu .container button {
   border: 5px solid black;
-  background-image: linear-gradient(
-    to right,
-    #6bd178,
-    #9ebe53,
-    #c0a844,
-    #d5914b,
-    #dd7c60,
-    #e16e6e,
-    #de6281,
-    #d45c96,
-    #cd55ac,
-    #bd55c5,
-    #9d5be1,
-    #5f66fb
-  );
+  background-image: linear-gradient(to right,
+      #6bd178,
+      #9ebe53,
+      #c0a844,
+      #d5914b,
+      #dd7c60,
+      #e16e6e,
+      #de6281,
+      #d45c96,
+      #cd55ac,
+      #bd55c5,
+      #9d5be1,
+      #5f66fb);
   width: 80%;
   padding: 15px;
   border-radius: 10px;
@@ -211,21 +203,19 @@ h1 img {
 #player-menu .details label {
   display: block;
   font-size: 15px;
-  background-image: linear-gradient(
-    to right,
-    #6bd178,
-    #9ebe53,
-    #c0a844,
-    #d5914b,
-    #dd7c60,
-    #e16e6e,
-    #de6281,
-    #d45c96,
-    #cd55ac,
-    #bd55c5,
-    #9d5be1,
-    #5f66fb
-  );
+  background-image: linear-gradient(to right,
+      #6bd178,
+      #9ebe53,
+      #c0a844,
+      #d5914b,
+      #dd7c60,
+      #e16e6e,
+      #de6281,
+      #d45c96,
+      #cd55ac,
+      #bd55c5,
+      #9d5be1,
+      #5f66fb);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -234,21 +224,19 @@ h1 img {
 #player-menu .container h2 {
   padding: 10px;
   font-size: 1rem;
-  background-image: linear-gradient(
-    to right,
-    #6bd178,
-    #9ebe53,
-    #c0a844,
-    #d5914b,
-    #dd7c60,
-    #e16e6e,
-    #de6281,
-    #d45c96,
-    #cd55ac,
-    #bd55c5,
-    #9d5be1,
-    #5f66fb
-  );
+  background-image: linear-gradient(to right,
+      #6bd178,
+      #9ebe53,
+      #c0a844,
+      #d5914b,
+      #dd7c60,
+      #e16e6e,
+      #de6281,
+      #d45c96,
+      #cd55ac,
+      #bd55c5,
+      #9d5be1,
+      #5f66fb);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -263,21 +251,19 @@ h1 img {
 #player-menu .container button {
   border: 5px solid black;
   color: black;
-  background-image: linear-gradient(
-    to right,
-    #6bd178,
-    #9ebe53,
-    #c0a844,
-    #d5914b,
-    #dd7c60,
-    #e16e6e,
-    #de6281,
-    #d45c96,
-    #cd55ac,
-    #bd55c5,
-    #9d5be1,
-    #5f66fb
-  );
+  background-image: linear-gradient(to right,
+      #6bd178,
+      #9ebe53,
+      #c0a844,
+      #d5914b,
+      #dd7c60,
+      #e16e6e,
+      #de6281,
+      #d45c96,
+      #cd55ac,
+      #bd55c5,
+      #9d5be1,
+      #5f66fb);
   width: 80%;
   padding: 15px;
   border-radius: 10px;
@@ -315,21 +301,19 @@ h1 img {
 #computer-menu .container h2 {
   padding: 10px;
   font-size: 1rem;
-  background-image: linear-gradient(
-    to right,
-    #6bd178,
-    #9ebe53,
-    #c0a844,
-    #d5914b,
-    #dd7c60,
-    #e16e6e,
-    #de6281,
-    #d45c96,
-    #cd55ac,
-    #bd55c5,
-    #9d5be1,
-    #5f66fb
-  );
+  background-image: linear-gradient(to right,
+      #6bd178,
+      #9ebe53,
+      #c0a844,
+      #d5914b,
+      #dd7c60,
+      #e16e6e,
+      #de6281,
+      #d45c96,
+      #cd55ac,
+      #bd55c5,
+      #9d5be1,
+      #5f66fb);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -349,21 +333,19 @@ h1 img {
 #computer-menu .details label {
   font-size: 15px;
   display: block;
-  background-image: linear-gradient(
-    to right,
-    #6bd178,
-    #9ebe53,
-    #c0a844,
-    #d5914b,
-    #dd7c60,
-    #e16e6e,
-    #de6281,
-    #d45c96,
-    #cd55ac,
-    #bd55c5,
-    #9d5be1,
-    #5f66fb
-  );
+  background-image: linear-gradient(to right,
+      #6bd178,
+      #9ebe53,
+      #c0a844,
+      #d5914b,
+      #dd7c60,
+      #e16e6e,
+      #de6281,
+      #d45c96,
+      #cd55ac,
+      #bd55c5,
+      #9d5be1,
+      #5f66fb);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -408,21 +390,19 @@ h1 img {
 #computer-menu .container .startComputer {
   width: 80%;
   padding: 10px;
-  background-image: linear-gradient(
-    to right,
-    #6bd178,
-    #9ebe53,
-    #c0a844,
-    #d5914b,
-    #dd7c60,
-    #e16e6e,
-    #de6281,
-    #d45c96,
-    #cd55ac,
-    #bd55c5,
-    #9d5be1,
-    #5f66fb
-  );
+  background-image: linear-gradient(to right,
+      #6bd178,
+      #9ebe53,
+      #c0a844,
+      #d5914b,
+      #dd7c60,
+      #e16e6e,
+      #de6281,
+      #d45c96,
+      #cd55ac,
+      #bd55c5,
+      #9d5be1,
+      #5f66fb);
 }
 
 /* COMPUTER MENU END! */
@@ -502,6 +482,7 @@ h1 img {
 
 .toggleCard {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
   pointer-events: none;
 }
 
@@ -520,6 +501,7 @@ h1 img {
 }
 
 #game .container aside .history {
+  max-height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -530,7 +512,6 @@ h2 {
 }
 
 #game .container .history .right-column {
-  font-size: 80%;
   text-align: center;
   background-color: black;
   color: white;
@@ -544,21 +525,19 @@ h2 {
 }
 
 #game .history button {
-  background-image: linear-gradient(
-    to right,
-    #6bd178,
-    #9ebe53,
-    #c0a844,
-    #d5914b,
-    #dd7c60,
-    #e16e6e,
-    #de6281,
-    #d45c96,
-    #cd55ac,
-    #bd55c5,
-    #9d5be1,
-    #5f66fb
-  );
+  background-image: linear-gradient(to right,
+      #6bd178,
+      #9ebe53,
+      #c0a844,
+      #d5914b,
+      #dd7c60,
+      #e16e6e,
+      #de6281,
+      #d45c96,
+      #cd55ac,
+      #bd55c5,
+      #9d5be1,
+      #5f66fb);
   width: 90%;
   border-radius: 10px;
   cursor: pointer;
@@ -575,21 +554,19 @@ h2 {
 }
 
 audio::-webkit-media-controls-panel {
-  background-image: linear-gradient(
-    to right,
-    #6bd178,
-    #9ebe53,
-    #c0a844,
-    #d5914b,
-    #dd7c60,
-    #e16e6e,
-    #de6281,
-    #d45c96,
-    #cd55ac,
-    #bd55c5,
-    #9d5be1,
-    #5f66fb
-  );
+  background-image: linear-gradient(to right,
+      #6bd178,
+      #9ebe53,
+      #c0a844,
+      #d5914b,
+      #dd7c60,
+      #e16e6e,
+      #de6281,
+      #d45c96,
+      #cd55ac,
+      #bd55c5,
+      #9d5be1,
+      #5f66fb);
 }
 
 audio {

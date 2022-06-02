@@ -32,11 +32,13 @@ let pointsPc = 0;
 let difficultyEasy = true;
 let timesClicked = 0;
 let cardId = 0;
+let currentPlayer;
 
 let input1;
 let input2;
 let input3;
 
+let tmpClickedCardsArray = [];
 let clickedCardsArray = [];
 let cardsArray = [];
 let botMemory = [];
@@ -74,6 +76,9 @@ playPlayerBtn.addEventListener("click", (event) => {
       pointsP2 = 0;
       scoreP2.textContent = input2 + ": " + pointsP2;
       history.innerHTML = "";
+      timesClicked = 0;
+      currentPlayer = input1;
+      cardId = 0;
 
       gameBox.innerHTML = "";
       createCards();
@@ -117,23 +122,32 @@ playComputerBtn.addEventListener("click", (event) => {
     currentPlayer = input1;
     scoreP1.style.color = "green";
 
-    createCards();
-
     quit.addEventListener("click", (event) => {
       location.reload();
     });
 
     reset.addEventListener("click", (event) => {
+      if (currentPlayer === "Gary Oak") {
+      } else { 
       pointsP1 = 0;
       scoreP1.textContent = input1 + ": " + pointsP1;
       pointsP2 = 0;
       scoreP2.textContent = input2 + ": " + pointsP2;
       history.innerHTML = "";
       pairs = {};
+      timesClicked = 0;
+      currentPlayer = input1;
+      scoreP1.style.color = "green";
+      scoreP2.style.color = "black";
+      cardId = 0;
+      clickedCardsArray = [];
+      cardsArray = [];
+      tmpClickedCardsArray = [];
 
       gameBox.innerHTML = "";
-      createCards();
+      createCards();}
     });
+    createCards();
   });
 });
 
@@ -205,12 +219,6 @@ const createCards = () => {
     cardBackImg.src = "../pokemon-icons/background.png";
     cardBackImg.className = "back";
 
-    /**
-     * <div class="card">
-     *  <img src="bild.jpeg" class="back"/>
-     *  <img src="bild2.jpeg" class="face"/>
-     * </div>
-     */
     card.append(cardBackImg);
     card.append(cardFrontImg);
     gameBox.append(card);
@@ -223,6 +231,7 @@ const createCards = () => {
           card.classList.toggle("toggleCard");
           timesClicked++;
           clickedCards(card);
+          console.log(pairs);
         }
       }
     });
@@ -240,7 +249,7 @@ function clickedCards(passedCard) {
 //Kollar om de två korten är matchande
 function checkPair(arrayToCheck) {
   if (timesClicked === 2) {
-    let tmpClickedCardsArray = [...arrayToCheck];
+    tmpClickedCardsArray = [...arrayToCheck];
     clickedCardsArray = [];
     if (
       tmpClickedCardsArray[0].attributes.name.value ===

@@ -6,4 +6,20 @@
   #game {
     margin-top: 7%;
   }
+  #game .container {
+    width: 30%;
+    margin-top: -10%;
+  }
+
+  #menu .container {
+    width: 30%;
+  }
+
+  #player-menu .container {
+    width: 30%;
+  }
+
+  #computer-menu .container {
+    width: 30%;
+  }
 }
